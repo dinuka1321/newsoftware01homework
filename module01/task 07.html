@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dice Roll Sum</title>
+</head>
+<body>
+
+<script>
+  const rolls = Number(prompt("Enter number of dice rolls:"));
+  let sum = 0;
+
+  for (let i = 0; i < rolls; i++) {
+    const dice = Math.floor(Math.random() * 6) + 1;
+    sum += dice;
+  }
+
+  document.write("Sum of dice rolls: " + sum);
+</script>
+
+</body>
+</html>
